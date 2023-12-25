@@ -1,0 +1,23 @@
+{
+  "name": "@puredit/generator",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "cross-env NODE_OPTIONS=\"--experimental-specifier-resolution=node --no-warnings --no-experimental-fetch\" ts-node src/index.ts"
+  },
+  "dependencies": {
+    "@puredit/parser": "https://github.com/puredit/parser.git",
+    "@puredit/utils": "https://github.com/puredit/utils.git",
+    "cross-env": "^7.0.3",
+    "mdiff": "^1.4.2",
+    "ts-node": "^10.9.1",
+    "yargs": "^17.5.1"
+  },
+  "files": [
+    "src"
+  ],
+  "devDependencies": {
+    "@types/yargs": "^17.0.32"
+  }
+}
