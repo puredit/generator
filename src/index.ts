@@ -1,3 +1,5 @@
+#!/usr/bin/env tsx
+
 import parseArgv from "yargs";
 import path from "path";
 import fs from "fs";

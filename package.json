@@ -14,11 +14,14 @@
     "cross-env": "^7.0.3",
     "mdiff": "^1.4.2",
     "ts-node": "^10.9.1",
+    "tsx": "^4.7.0",
     "yargs": "^17.5.1"
   },
   "devDependencies": {
-    "@types/yargs": "^17.0.32",
-    "tsx": "^4.7.0"
+    "@types/yargs": "^17.0.32"
+  },
+  "bin": {
+    "puredit-generator": "src/index.ts"
   },
   "files": [
     "src"
