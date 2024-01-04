@@ -13,11 +13,11 @@
     "@puredit/utils": "https://github.com/puredit/utils.git",
     "cross-env": "^7.0.3",
     "mdiff": "^1.4.2",
-    "ts-node": "^10.9.1",
-    "tsx": "^4.7.0",
+    "tsx": "^3.14.0",
     "yargs": "^17.5.1"
   },
   "devDependencies": {
+    "@types/node": "^20.10.6",
     "@types/yargs": "^17.0.32"
   },
   "bin": {
