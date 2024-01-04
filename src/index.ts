@@ -1,4 +1,4 @@
-import parseArgv from "yargs/yargs.js";
+import parseArgv from "yargs";
 import path from "path";
 import fs from "fs";
 import { Parser, Target } from "@puredit/parser";
@@ -32,7 +32,7 @@ if (!Object.values(Target).includes(args["language"] as Target)) {
 const parser = await Parser.load(args["language"] as Target);
 
 // Ensure we are running from the root directory of the monorepo
-process.chdir("../..");
+// process.chdir("..");
 
 let doubleNewline = "\n\n";
 if (process.platform === "win32") {

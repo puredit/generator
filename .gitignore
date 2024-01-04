@@ -1,2 +1,6 @@
 node_modules/
 dist/
+examples/python/*
+!examples/python/.gitkeep
+examples/typescript/*
+!examples/typescript/.gitkeep

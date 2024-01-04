@@ -4,7 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "cross-env NODE_OPTIONS=\"--experimental-specifier-resolution=node --no-warnings --no-experimental-fetch\" ts-node src/index.ts"
+    "start": "npx tsx src/index.ts",
+    "generate-python-sample": "npm start -- --language py --target-dir ./examples/python --parser-module './parser' --parser-name pythonParser --projection-name take --samples ./examples/py-take.txt",
+    "generate-typescript-sample": "npm start -- --language ts --target-dir ./examples/typescript --parser-module './parser' --parser-name tsParser --projection-name take --samples ./examples/ts-remove.txt"
   },
   "dependencies": {
     "@puredit/parser": "https://github.com/puredit/parser.git",
@@ -14,10 +16,11 @@
     "ts-node": "^10.9.1",
     "yargs": "^17.5.1"
   },
+  "devDependencies": {
+    "@types/yargs": "^17.0.32",
+    "tsx": "^4.7.0"
+  },
   "files": [
     "src"
-  ],
-  "devDependencies": {
-    "@types/yargs": "^17.0.32"
-  }
+  ]
 }
