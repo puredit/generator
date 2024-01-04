@@ -17,8 +17,14 @@
     "yargs": "^17.5.1"
   },
   "devDependencies": {
+    "@codemirror/language": "6",
+    "@codemirror/state": "6",
+    "@codemirror/view": "6",
+    "@lezer/highlight": "1",
+    "@puredit/projections": "https://github.com/puredit/projections.git",
     "@types/node": "^20.10.6",
-    "@types/yargs": "^17.0.32"
+    "@types/yargs": "^17.0.32",
+    "svelte": "^3.48.0"
   },
   "bin": {
     "puredit-generator": "src/index.ts"

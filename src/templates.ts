@@ -11,8 +11,7 @@ export const definitionTemplate = (options: {
   const componentName = prefixCapitalized + "Projection";
   const projectionName = options.prefix + "Projection";
   return `import { arg } from "@puredit/parser";
-import { svelteProjection } from "@puredit/projections/svelte";
-import type { Projection } from "@puredit/projections/types";
+import { svelteProjection, type Projection } from "@puredit/projections";
 import { ${options.parserName} } from "${options.parserModule}";
 import ${componentName} from "./${componentName}.svelte";
 
@@ -42,8 +41,7 @@ export const componentTemplate = (
   import type { EditorView } from "@codemirror/view";
   import { highlightingFor } from "@codemirror/language";
   import type { Match } from "@puredit/parser";
-  import type { FocusGroup } from "@puredit/projections/focus";
-  import TextInput from "@puredit/projections/TextInput.svelte";
+  import { type FocusGroup, TextInput } from "@puredit/projections";
 
   export let isNew: boolean;
   export let view: EditorView | null;
